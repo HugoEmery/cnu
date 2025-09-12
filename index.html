@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo Programático CNU</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Conteúdo Programático CNU</h1>
+        <p>Preparação para as Provas - Conhecimentos Gerais e Específicos</p>
+    </header>
+    
+    <div class="container">
+        <div class="intro">
+            <h2>Bem-vindo ao Portal de Estudos</h2>
+            <p>Este portal contém todo o conteúdo programático para as provas do CNU, organizado por seções e tópicos. Para cada capítulo, você pode adicionar e visualizar vídeos de apoio ao estudo.</p>
+        </div>
+        
+        <div class="section">
+            <h2>CONHECIMENTOS GERAIS</h2>
+            
+            <div class="topic" id="topic-1">
+                <h3>1. Desafios do estado de direito: democracia e cidadania</h3>
+                <div class="video-container" id="video-container-1">
+                    <div class="video-placeholder">
+                        <p>Nenhum vídeo adicionado para este tópico.</p>
+                        <button class="btn" onclick="toggleVideoForm('1')">Adicionar Vídeo</button>
+                    </div>
+                </div>
+                <div class="add-video-form" id="video-form-1">
+                    <div class="form-group">
+                        <label for="video-title-1">Título do Vídeo:</label>
+                        <input type="text" id="video-title-1" placeholder="Ex: Democracia e Cidadania">
+                    </div>
+                    <div class="form-group">
+                        <label for="video-url-1">URL do Vídeo (YouTube):</label>
+                        <input type="url" id="video-url-1" placeholder="Ex: https://youtube.com/embed/abc123">
+                    </div>
+                    <button class="btn" onclick="addVideo('1')">Salvar Vídeo</button>
+                    <button class="btn btn-danger" onclick="toggleVideoForm('1')">Cancelar</button>
+                </div>
+                
+                <div class="subtopic">
+                    <h4>1.1. Formação histórica do Estado Democrático de Direito</h4>
+                    <div class="video-container" id="video-container-1-1">
+                        <div class="video-placeholder">
+                            <p>Nenhum vídeo adicionado para este subtópico.</p>
+                            <button class="btn" onclick="toggleVideoForm('1-1')">Adicionar Vídeo</button>
+                        </div>
+                    </div>
+                    <div class="add-video-form" id="video-form-1-1">
+                        <div class="form-group">
+                            <label for="video-title-1-1">Título do Vídeo:</label>
+                            <input type="text" id="video-title-1-1" placeholder="Ex: Formação do Estado Democrático">
+                        </div>
+                        <div class="form-group">
+                            <label for="video-url-1-1">URL do Vídeo (YouTube):</label>
+                            <input type="url" id="video-url-1-1" placeholder="Ex: https://youtube.com/embed/abc123">
+                        </div>
+                        <button class="btn" onclick="addVideo('1-1')">Salvar Vídeo</button>
+                        <button class="btn btn-danger" onclick="toggleVideoForm('1-1')">Cancelar</button>
+                    </div>
+                </div>
+                
+                <div class="subtopic">
+                    <h4>1.2. Constituição Federal de 1988</h4>
+                    <div class="video-container" id="video-container-1-2">
+                        <div class="video-placeholder">
+                            <p>Nenhum vídeo adicionado para este subtópico.</p>
+                            <button class="btn" onclick="toggleVideoForm('1-2')">Adicionar Vídeo</button>
+                        </div>
+                    </div>
+                    <div class="add-video-form" id="video-form-1-2">
+                        <div class="form-group">
+                            <label for="video-title-1-2">Título do Vídeo:</label>
+                            <input type="text" id="video-title-1-2" placeholder="Ex: Constituição Federal de 1988">
+                        </div>
+                        <div class="form-group">
+                            <label for="video-url-1-2">URL do Vídeo (YouTube):</label>
+                            <input type="url" id="video-url-1-2" placeholder="Ex: https://youtube.com/embed/abc123">
+                        </div>
+                        <button class="btn" onclick="addVideo('1-2')">Salvar Vídeo</button>
+                        <button class="btn btn-danger" onclick="toggleVideoForm('1-2')">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="topic" id="topic-2">
+                <h3>2. Políticas públicas</h3>
+                <div class="video-container" id="video-container-2">
+                    <div class="video-placeholder">
+                        <p>Nenhum vídeo adicionado para este tópico.</p>
+                        <button class="btn" onclick="toggleVideoForm('2')">Adicionar Vídeo</button>
+                    </div>
+                </div>
+                <div class="add-video-form" id="video-form-2">
+                    <div class="form-group">
+                        <label for="video-title-2">Título do Vídeo:</label>
+                        <input type="text" id="video-title-2" placeholder="Ex: Políticas Públicas no Brasil">
+                    </div>
+                    <div class="form-group">
+                        <label for="video-url-2">URL do Vídeo (YouTube):</label>
+                        <input type="url" id="video-url-2" placeholder="Ex: https://youtube.com/embed/abc123">
+                    </div>
+                    <button class="btn" onclick="addVideo('2')">Salvar Vídeo</button>
+                    <button class="btn btn-danger" onclick="toggleVideoForm('2')">Cancelar</button>
+                </div>
+            </div>
+            
+            <div class="topic" id="topic-3">
+                <h3>3. Ética e integridade</h3>
+                <div class="video-container" id="video-container-3">
+                    <div class="video-placeholder">
+                        <p>Nenhum vídeo adicionado para este tópico.</p>
+                        <button class="btn" onclick="toggleVideoForm('3')">Adicionar Vídeo</button>
+                    </div>
+                </div>
+                <div class="add-video-form" id="video-form-3">
+                    <div class="form-group">
+                        <label for="video-title-3">Título do Vídeo:</label>
+                        <input type="text" id="video-title-3" placeholder="Ex: Ética no Serviço Público">
+                    </div>
+                    <div class="form-group">
+                        <label for="video-url-3">URL do Vídeo (YouTube):</label>
+                        <input type="url" id="video-url-3" placeholder="Ex: https://youtube.com/embed/abc123">
+                    </div>
+                    <button class="btn" onclick="addVideo('3')">Salvar Vídeo</button>
+                    <button class="btn btn-danger" onclick="toggleVideoForm('3')">Cancelar</button>
+                </div>
+            </div>
+            
+            <div class="topic" id="topic-4">
+                <h3>4. Diversidade e inclusão na sociedade</h3>
+                <div class="video-container" id="video-container-4">
+                    <div class="video-placeholder">
+                        <p>Nenhum vídeo adicionado para este tópico.</p>
+                        <button class="btn" onclick="toggleVideoForm('4')">Adicionar Vídeo</button>
+                    </div>
+                </div>
+                <div class="add-video-form" id="video-form-4">
+                    <div class="form-group">
+                        <label for="video-title-4">Título do Vídeo:</label>
+                        <input type="text" id="video-title-4" placeholder="Ex: Diversidade e Inclusão">
+                    </div>
+                    <div class="form-group">
+                        <label for="video-url-4">URL do Vídeo (YouTube):</label>
+                        <input type="url" id="video-url-4" placeholder="Ex: https://youtube.com/embed/abc123">
+                    </div>
+                    <button class="btn" onclick="addVideo('4')">Salvar Vídeo</button>
+                    <button class="btn btn-danger" onclick="toggleVideoForm('4')">Cancelar</button>
+                </div>
+            </div>
+            
+            <div class="topic" id="topic-5">
+                <h3>5. Administração pública federal</h3>
+                <div class="video-container" id="video-container-5">
+                    <div class="video-placeholder">
+                        <p>Nenhum vídeo adicionado para este tópico.</p>
+                        <button class="btn" onclick="toggleVideoForm('5')">Adicionar Vídeo</button>
+                    </div>
+                </div>
+                <div class="add-video-form" id="video-form-5">
+                    <div class="form-group">
+                        <label for="video-title-5">Título do Vídeo:</label>
+                        <input type="text" id="video-title-5" placeholder="Ex: Administração Pública Federal">
+                    </div>
+                    <div class="form-group">
+                        <label for="video-url-5">URL do Vídeo (YouTube):</label>
+                        <input type="url" id="video-url-5" placeholder="Ex: https://youtube.com/embed/abc123">
+                    </div>
+                    <button class="btn" onclick="addVideo('5')">Salvar Vídeo</button>
+                    <button class="btn btn-danger" onclick="toggleVideoForm('5')">Cancelar</button>
+                </div>
+            </div>
+            
+            <div class="topic" id="topic-6">
+                <h3>6. Trabalho e tecnologia</h3>
+                <div class="video-container" id="video-container-6">
+                    <div class="video-placeholder">
+                        <p>Nenhum vídeo adicionado para este tópico.</p>
+                        <button class="btn" onclick="toggleVideoForm('6')">Adicionar Vídeo</button>
+                    </div>
+                </div>
+                <div class="add-video-form" id="video-form-6">
+                    <div class="form-group">
+                        <label for="video-title-6">Título do Vídeo:</label>
+                        <input type="text" id="video-title-6" placeholder="Ex: Trabalho e Tecnologia">
+                    </div>
+                    <div class="form-group">
+                        <label for="video-url-6">URL do Vídeo (YouTube):</label>
+                        <input type="url" id="video-url-6" placeholder="Ex: https://youtube.com/embed/abc123">
+                    </div>
+                    <button class="btn" onclick="addVideo('6')">Salvar Vídeo</button>
+                    <button class="btn btn-danger" onclick="toggleVideoForm('6')">Cancelar</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>CONHECIMENTOS ESPECÍFICOS</h2>
+            
+            <div class="topic" id="topic-cts">
+                <h3>EIXO TEMÁTICO 1 – CIÊNCIA, TECNOLOGIA E SOCIEDADE (CTS)</h3>
+                <div class="video-container" id="video-container-cts">
+                    <div class="video-placeholder">
+                        <p>Nenhum vídeo adicionado para este eixo.</p>
+                        <button class="btn" onclick="toggleVideoForm('cts')">Adicionar Vídeo</button>
+                    </div>
+                </div>
+                <div class="add-video-form" id="video-form-cts">
+                    <div class="form-group">
+                        <label for="video-title-cts">Título do Vídeo:</label>
+                        <input type="text" id="video-title-cts" placeholder="Ex: CTS no Brasil">
+                    </div>
+                    <div class="form-group">
+                        <label for="video-url-cts">URL do Vídeo (YouTube):</label>
+                        <input type="url" id="video-url-cts" placeholder="Ex: https://youtube.com/embed/abc123">
+                    </div>
+                    <button class="btn" onclick="addVideo('cts')">Salvar Vídeo</button>
+                    <button class="btn btn-danger" onclick="toggleVideoForm('cts')">Cancelar</button>
+                </div>
+            </div>
+            
+            <div class="topic" id="topic-cti">
+                <h3>EIXO TEMÁTICO 2 – POLÍTICAS PÚBLICAS DE CIÊNCIA, TECNOLOGIA E INOVAÇÃO (CT&I)</h3>
+                <div class="video-container" id="video-container-cti">
+                    <div class="video-placeholder">
+                        <p>Nenhum vídeo adicionado para este eixo.</p>
+                        <button class="btn" onclick="toggleVideoForm('cti')">Adicionar Vídeo</button>
+                    </div>
+                </div>
+                <div class="add-video-form" id="video-form-cti">
+                    <div class="form-group">
+                        <label for="video-title-cti">Título do Vídeo:</label>
+                        <input type="text" id="video-title-cti" placeholder="Ex: Políticas de CT&I">
+                    </div>
+                    <div class="form-group">
+                        <label for="video-url-cti">URL do Vídeo (YouTube):</label>
+                        <input type="url" id="video-url-cti" placeholder="Ex: https://youtube.com/embed/abc123">
+                    </div>
+                    <button class="btn" onclick="addVideo('cti')">Salvar Vídeo</button>
+                    <button class="btn btn-danger" onclick="toggleVideoForm('cti')">Cancelar</button>
+                </div>
+            </div>
+            
+            <div class="topic" id="topic-gestao">
+                <h3>EIXO TEMÁTICO 3 – GESTÃO DE PROJETOS EM CIÊNCIA, TECNOLOGIA E INOVAÇÃO (CT&I)</h3>
+                <div class="video-container" id="video-container-gestao">
+                    <div class="video-placeholder">
+                        <p>Nenhum vídeo adicionado para este eixo.</p>
+                        <button class="btn" onclick="toggleVideoForm('gestao')">Adicionar Vídeo</button>
+                    </div>
+                </div>
+                <div class="add-video-form" id="video-form-gestao">
+                    <div class="form-group">
+                        <label for="video-title-gestao">Título do Vídeo:</label>
+                        <input type="text" id="video-title-gestao" placeholder="Ex: Gestão de Projetos em CT&I">
+                    </div>
+                    <div class="form-group">
+                        <label for="video-url-gestao">URL do Vídeo (YouTube):</label>
+                        <input type="url" id="video-url-gestao" placeholder="Ex: https://youtube.com/embed/abc123">
+                    </div>
+                    <button class="btn" onclick="addVideo('gestao')">Salvar Vídeo</button>
+                    <button class="btn btn-danger" onclick="toggleVideoForm('gestao')">Cancelar</button>
+                </div>
+            </div>
+            
+            <div class="topic" id="topic-tics">
+                <h3>EIXO TEMÁTICO 4 – TECNOLOGIAS DA INFORMAÇÃO E COMUNICAÇÃO (TICs) & CIÊNCIA DE DADOS</h3>
+                <div class="video-container" id="video-container-tics">
+                    <div class="video-placeholder">
+                        <p>Nenhum vídeo adicionado para este eixo.</p>
+                        <button class="btn" onclick="toggleVideoForm('tics')">Adicionar Vídeo</button>
+                    </div>
+                </div>
+                <div class="add-video-form" id="video-form-tics">
+                    <div class="form-group">
+                        <label for="video-title-tics">Título do Vídeo:</label>
+                        <input type="text" id="video-title-tics" placeholder="Ex: TICs e Ciência de Dados">
+                    </div>
+                    <div class="form-group">
+                        <label for="video-url-tics">URL do Vídeo (YouTube):</label>
+                        <input type="url" id="video-url-tics" placeholder="Ex: https://youtube.com/embed/abc123">
+                    </div>
+                    <button class="btn" onclick="addVideo('tics')">Salvar Vídeo</button>
+                    <button class="btn btn-danger" onclick="toggleVideoForm('tics')">Cancelar</button>
+                </div>
+            </div>
+            
+            <div class="topic" id="topic-metodologia">
+                <h3>EIXO TEMÁTICO 5 – METODOLOGIA DA PESQUISA CIENTÍFICA</h3>
+                <div class="video-container" id="video-container-metodologia">
+                    <div class="video-placeholder">
+                        <p>Nenhum vídeo adicionado para este eixo.</p>
+                        <button class="btn" onclick="toggleVideoForm('metodologia')">Adicionar Vídeo</button>
+                    </div>
+                </div>
+                <div class="add-video-form" id="video-form-metodologia">
+                    <div class="form-group">
+                        <label for="video-title-metodologia">Título do Vídeo:</label>
+                        <input type="text" id="video-title-metodologia" placeholder="Ex: Metodologia da Pesquisa Científica">
+                    </div>
+                    <div class="form-group">
+                        <label for="video-url-metodologia">URL do Vídeo (YouTube):</label>
+                        <input type="url" id="video-url-metodologia" placeholder="Ex: https://youtube.com/embed/abc123">
+                    </div>
+                    <button class="btn" onclick="addVideo('metodologia')">Salvar Vídeo</button>
+                    <button class="btn btn-danger" onclick="toggleVideoForm('metodologia')">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Portal de Estudos CNU &copy; 2023</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
