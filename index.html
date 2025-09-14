@@ -1,38 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conteúdo Programático CNU</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Conteúdo Programático CT&I | Busca & Mobile</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
 </head>
 <body>
-    <header>
-        <h1>Conteúdo Programático CNU</h1>
-        <p>Preparação para as Provas - Conhecimentos Gerais e Específicos</p>
-    </header>
-    
-    <div class="container">
-        <div class="intro">
-            <h2>Bem-vindo ao Portal de Estudos</h2>
-            <p>Este portal contém todo o conteúdo programático para as provas do CNU, organizado por seções e tópicos. Para cada capítulo, você pode adicionar e visualizar vídeos de apoio ao estudo.</p>
-        </div>
-        
-        <div class="section">
-            <h2>CONHECIMENTOS GERAIS</h2>         
-            
-        </div>
-        
-        <div class="section">
-            <h2>CONHECIMENTOS ESPECÍFICOS</h2>
-            
-        </div>   
-    </div>
-    
-    <footer>
-        <p>Portal de Estudos CNU &copy; 2023</p>
-    </footer>
 
-    <script src="script.js"></script>
+  <!-- Cabeçalho -->
+  <header class="header">
+    <div class="container">
+      <h1><i class="fas fa-book-open"></i> Conteúdo Programático</h1>
+      <p>CT&I • Conhecimentos Gerais & Específicos</p>
+    </div>
+  </header>
+
+  <!-- Barra de Busca -->
+  <section class="search-section">
+    <div class="container">
+      <div class="search-box">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" id="searchInput" placeholder="Buscar por termos como 'ética', 'IA', 'LGPD'..." />
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Hamburger (Mobile) -->
+  <nav class="navbar-mobile">
+    <div class="container">
+      <button id="menuToggle" class="hamburger-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul id="mobileMenu" class="mobile-menu">
+        <li><a href="#conhecimentos-gerais"><i class="fas fa-globe"></i> Conhecimentos Gerais</a></li>
+        <li><a href="#conhecimentos-especificos"><i class="fas fa-chart-line"></i> Conhecimentos Específicos</a></li>
+        <li><a href="#sobre"><i class="fas fa-info-circle"></i> Sobre</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Seção: Conteúdo Principal -->
+  <main class="main-content">
+    <div class="container">
+
+      <!-- Seção: Conhecimentos Gerais -->
+      <section id="conhecimentos-gerais" class="content-section">
+        <h2><i class="fas fa-graduation-cap"></i> CONHECIMENTOS GERAIS</h2>
+        <div class="cards-grid" id="cards-gerais">
+          <!-- Gerados dinamicamente via JS -->
+        </div>
+      </section>
+
+      <!-- Seção: Conhecimentos Específicos -->
+      <section id="conhecimentos-especificos" class="content-section">
+        <h2><i class="fas fa-microscope"></i> CONHECIMENTOS ESPECÍFICOS</h2>
+        <div class="cards-grid" id="cards-especificos">
+          <!-- Gerados dinamicamente via JS -->
+        </div>
+      </section>
+
+      <!-- Seção: Sobre -->
+      <section id="sobre" class="content-section">
+        <h2><i class="fas fa-heart"></i> Sobre este Site</h2>
+        <p>Este site foi criado para organizar e facilitar o estudo do conteúdo programático para provas concursais voltadas para áreas de Ciência, Tecnologia, Inovação (CT&I), Política Pública e Administração Pública no Brasil.</p>
+        <p>É ideal para candidatos a cargos federais, estaduais ou municipais em áreas de governo, ciência, tecnologia e inovação.</p>
+        <p><strong>Deseja contribuir?</strong> Envie sugestões por e-mail: contato@site-cti.org</p>
+      </section>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Conteúdo Programático CT&I. Todos os direitos reservados.</p>
+      <p>Desenvolvido com ❤️ para estudantes e profissionais da área pública.</p>
+    </div>
+  </footer>
+
+  <!-- Script JS -->
+  <script src="script.js"></script>
+
 </body>
 </html>

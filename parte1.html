@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Conteúdo Programático CT&I</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Banner Principal -->
+  <header class="header">
+    <div class="container">
+      <h1><i class="fas fa-book-open"></i> Desafios do Estado de Direito: democracia e cidadania</h1>
+      <p>CT&I • Conhecimentos Gerais & Específicos</p>
+    </div>
+  </header>
+
+  <!-- Container da Página Individual -->
+  <main class="main-content">
+    <div class="container">
+
+      <!-- Botão Voltar -->
+      <div style="margin-bottom: 20px;">
+        <a href="index.html" class="back-btn">
+          <i class="fas fa-arrow-left"></i> Voltar
+        </a>
+      </div>
+
+      <!-- Título da Seção -->
+      <section class="content-section">
+      <!-- Copie e cole o conteúdo acima, depois modifique apenas isso: -->
+
+<h2 id="titulo-secao">1. Desafios do Estado de Direito: democracia e cidadania.</h2>
+
+<!-- Vídeo do You Tube -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hlAG-9OS6MM?si=J5Vs7OhZtlppQS7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<ul id="conteudoLista">
+  <li>Formação histórica do Estado Democrático de Direito.</li>
+  <li>Constituição Federal de 1988: direitos fundamentais, sociais e políticos, consolidação da democracia, representação política e participação cidadã.</li>
+  <li>Relações entre os Poderes Executivo e Legislativo e os desafios da governabilidade.</li>
+  <li>Judicialização de políticas públicas.</li>
+  <li>Capacidades estatais e democracia.</li>
+  <li>Efetivação e reparação de Direitos Humanos: demandas sociais históricas, autoritarismo, violência de Estado, memória, verdade e justiça.</li>
+</ul>
+     
+
+       
+
+       
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Rodapé (igual ao original) -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Conteúdo Programático CT&I. Todos os direitos reservados.</p>
+      <p>Desenvolvido com ❤️ para estudantes e profissionais da área pública.</p>
+    </div>
+  </footer>
+
+  <!-- Script (opcional: para interações futuras) -->
+  <script>
+    // Função para carregar dados dinâmicos (ex: título, lista, vídeo)
+    document.addEventListener("DOMContentLoaded", function () {
+      const titulo = document.getElementById("titulo-secao");
+      const lista = document.getElementById("conteudoLista");
+      const videoContainer = document.getElementById("videoContainer");
+
+      // Exemplo de preenchimento automático (pode ser substituído por JSON externo)
+      titulo.textContent = "1. Desafios do Estado de Direito: democracia e cidadania.";
+
+      // Lista de itens (subtópicos)
+      const itens = [
+        "Formação histórica do Estado Democrático de Direito.",
+        "Constituição Federal de 1988: direitos fundamentais, sociais e políticos, consolidação da democracia, representação política e participação cidadã.",
+        "Relações entre os Poderes Executivo e Legislativo e os desafios da governabilidade.",
+        "Judicialização de políticas públicas.",
+        "Capacidades estatais e democracia.",
+        "Efetivação e reparação de Direitos Humanos: demandas sociais históricas, autoritarismo, violência de Estado, memória, verdade e justiça."
+      ];
+
+      // Preenche a lista
+      itens.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        lista.appendChild(li);
+      });
+
+      // Adiciona um vídeo exemplo (descomente para usar)
+      /*
+      const iframe = document.createElement("iframe");
+      iframe.width = "100%";
+      iframe.height = "315";
+      iframe.src = "https://www.youtube.com/watch?v=hlAG-9OS6MM" // Substitua pelo seu vídeo
+      iframe.frameBorder = "0";
+      iframe.allowFullscreen = true;
+      iframe.title = "Vídeo explicativo sobre democracia e cidadania";
+      videoContainer.appendChild(iframe);
+      */
+    });
+  </script>
+
+</body>
+</html>
