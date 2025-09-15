@@ -1,86 +1,179 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Conteúdo Programático CT&I | Busca & Mobile</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo Programático</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Cabeçalho -->
-  <header class="header">
-    <div class="container">
-      <h1><i class="fas fa-book-open"></i> Conteúdo Programático</h1>
-      <p>CT&I • Conhecimentos Gerais & Específicos</p>
-    </div>
-  </header>
-
-  <!-- Barra de Busca -->
-  <section class="search-section">
-    <div class="container">
-      <div class="search-box">
-        <i class="fas fa-search search-icon"></i>
-        <input type="text" id="searchInput" placeholder="Buscar por termos como 'ética', 'IA', 'LGPD'..." />
-      </div>
-    </div>
-  </section>
-
-  <!-- Menu Hamburger (Mobile) -->
-  <nav class="navbar-mobile">
-    <div class="container">
-      <button id="menuToggle" class="hamburger-btn">
-        <i class="fas fa-bars"></i>
-      </button>
-      <ul id="mobileMenu" class="mobile-menu">
-        <li><a href="#conhecimentos-gerais"><i class="fas fa-globe"></i> Conhecimentos Gerais</a></li>
-        <li><a href="#conhecimentos-especificos"><i class="fas fa-chart-line"></i> Conhecimentos Específicos</a></li>
-        <li><a href="#sobre"><i class="fas fa-info-circle"></i> Sobre</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Seção: Conteúdo Principal -->
-  <main class="main-content">
-    <div class="container">
-
-      <!-- Seção: Conhecimentos Gerais -->
-      <section id="conhecimentos-gerais" class="content-section">
-        <h2><i class="fas fa-graduation-cap"></i> CONHECIMENTOS GERAIS</h2>
-        <div class="cards-grid" id="cards-gerais">
-          <!-- Gerados dinamicamente via JS -->
+    <header>
+        <div class="header-container">
+            <h1>Conteúdo Programático</h1>
+            <p>CT&I · Conhecimentos Gerais & Específicos</p>
         </div>
-      </section>
+    </header>
 
-      <!-- Seção: Conhecimentos Específicos -->
-      <section id="conhecimentos-especificos" class="content-section">
-        <h2><i class="fas fa-microscope"></i> CONHECIMENTOS ESPECÍFICOS</h2>
-        <div class="cards-grid" id="cards-especificos">
-          <!-- Gerados dinamicamente via JS -->
+    <nav class="breadcrumb">
+        <a href="index.html">Página Principal</a>
+    </nav>
+
+    <main>
+        <div class="search-bar-container">
+            <input type="text" id="search-bar" placeholder="🔍 Buscar por termos como 'ética', 'IA', 'LGPD'...">
         </div>
-      </section>
 
-      <!-- Seção: Sobre -->
-      <section id="sobre" class="content-section">
-        <h2><i class="fas fa-heart"></i> Sobre este Site</h2>
-        <p>Este site foi criado para organizar e facilitar o estudo do conteúdo programático para provas concursais voltadas para áreas de Ciência, Tecnologia, Inovação (CT&I), Política Pública e Administração Pública no Brasil.</p>
-        <p>É ideal para candidatos a cargos federais, estaduais ou municipais em áreas de governo, ciência, tecnologia e inovação.</p>
-        <p><strong>Deseja contribuir?</strong> Envie sugestões por e-mail: contato@site-cti.org</p>
-      </section>
-    </div>
-  </main>
+        <nav class="main-nav">
+            <button class="menu-toggle" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="material-icons">menu</span>
+            </button>
+            <ul id="mobile-menu" class="nav-links">
+                </ul>
+        </nav>
 
-  <!-- Rodapé -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Conteúdo Programático CT&I. Todos os direitos reservados.</p>
-      <p>Desenvolvido com ❤️ para estudantes e profissionais da área pública.</p>
-    </div>
-  </footer>
+        <section class="content-section">
+            <h2 class="section-title">CONHECIMENTOS GERAIS</h2>
+            <div class="content-grid">
+                <button class="accordion" data-topic="Desafios do Estado de Direito"><a href="pages1/parte1.html">1. Desafios do Estado de Direito</a></button>
+                
+                <div class="panel">
+                                     
+                </div>
+                 
+                <button class="accordion" data-topic="Políticas Públicas">2. Políticas Públicas</button>
+                <div class="panel">
+                    <p>2.1. Fundamentos de políticas públicas: conceitos e tipologias.</p>
+                    <p>2.2. Ciclos de políticas públicas: agenda, formulação, processos decisórios, implementação de planos, programas e projetos, monitoramento e avaliação.</p>
+                    <p>2.3. Levantamento, sistematização, análise e interpretação de dados quantitativos, qualitativos e indicadores de políticas públicas.</p>
+                    <p>2.4. Federalismo, descentralização e sistemas de políticas públicas no Brasil.</p>
+                    <p>2.5. Intersetorialidade e transversalidade.</p>
+                    <p>2.6. Transformação digital e seus impactos na sociedade e nas políticas públicas.</p>
+                </div>
+                
+                <button class="accordion" data-topic="Ética e Integridade">3. Ética e Integridade</button>
+                <div class="panel">
+                    <p>3.1. Princípios e valores éticos do serviço público, seus direitos e deveres.</p>
+                    <p>3.2. Governança pública e sistemas de governança.</p>
+                    <p>3.3. Transparência.</p>
+                    <p>3.4. Acesso à informação.</p>
+                </div>
+                
+                <button class="accordion" data-topic="Diversidade e Inclusão">4. Diversidade e Inclusão na sociedade</button>
+                <div class="panel">
+                    <p>4.1. Diversidade de sexo, gênero e sexualidade; diversidade étnico-racial; diversidade cultural.</p>
+                    <p>4.2. Desafios sociopolíticos da inclusão de grupos vulnerabilizados: crianças e adolescentes; idosos; LGBTQIA+; pessoas com deficiências; pessoas em situação de rua, povos indígenas, comunidades quilombolas e demais minorias sociais.</p>
+                    <p>4.3. Desigualdades e interseccionalidades.</p>
+                </div>
 
-  <!-- Script JS -->
-  <script src="script.js"></script>
+                <button class="accordion" data-topic="Administração Pública Federal">5. Administração Pública Federal</button>
+                <div class="panel">
+                    <p>5.1. Princípios constitucionais e normas que regem a administração pública.</p>
+                    <p>5.2. Evolução das reformas da administração e do serviço público no Brasil e estrutura organizacional da Administração Pública Federal.</p>
+                    <p>5.3. Sistemas estruturantes da administração pública federal.</p>
+                    <p>5.4. Fundamentos das finanças públicas, tributação e do planejamento-orçamento (Plano Plurianual, Lei de Diretrizes Orçamentárias e Lei Orçamentária Anual).</p>
+                </div>
 
+                <button class="accordion" data-topic="Trabalho e Tecnologia">6. Trabalho e Tecnologia</button>
+                <div class="panel">
+                    <p>6.1. Evolução das relações de trabalho e uso de novas tecnologias.</p>
+                    <p>6.2. Inteligência Artificial, automação e produtividade no setor público.</p>
+                    <p>6.3. Limitações, riscos e problemas associados ao uso das novas tecnologias no setor público.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">CONHECIMENTOS ESPECÍFICOS</h2>
+            <div class="content-grid">
+                <button class="accordion" data-topic="Eixo Temático 1">EIXO TEMÁTICO 1 – CIÊNCIA, TECNOLOGIA E SOCIEDADE (CTS)</button>
+                <div class="panel">
+                    <p>1. Fundamentos da abordagem CTS.</p>
+                    <p>1.1. Paradigmas, conceitos, origens e evolução;</p>
+                    <p>1.2. Modelos e concepções de inovação tecnológica.</p>
+                    <p>1.3. Pensamento crítico sobre os impactos e responsabilidades sociais relacionados à ciência e tecnologia.</p>
+                    <p>1.4. Interações entre ciência, tecnologia, cultura e valores sociais.</p>
+                    <p>1.5. A relação entre desenvolvimento tecnológico e desenvolvimento social.</p>
+                    <p>1.6. Ética em pesquisa científica.</p>
+                    <p>1.6.1. Comitês de ética.</p>
+                    <p>1.6.2. Consentimento livre e esclarecido.</p>
+                    <p>1.6.3. Integridade na produção de dados e resultados.</p>
+                    <p>1.7. Popularização da ciência, educação científica e engajamento público.</p>
+                    <p>1.8. Desigualdades no acesso à ciência e tecnologia: questões de gênero, raça e território.</p>
+                    <p>1.9. Ciência aberta, acesso livre à informação científica e reprodutibilidade.</p>
+                </div>
+                
+                <button class="accordion" data-topic="Eixo Temático 2">EIXO TEMÁTICO 2 – POLÍTICAS PÚBLICAS DE CIÊNCIA, TECNOLOGIA E INOVAÇÃO (CT&I)</button>
+                <div class="panel">
+                    <p>1. Estrutura, fundamentos e instrumentos da CT&I no Brasil.</p>
+                    <p>1.1. Estrutura e funcionamento do Sistema Nacional de Ciência, Tecnologia e Inovação (SNCTI).</p>
+                    <p>1.2. Marco legal da CT&I no Brasil: Lei nº 13.243/2016 (Marco Legal da CT&I); Lei da Inovação e Lei do Bem.</p>
+                    <p>2. Planos, programas e instrumentos de fomento à CT&I: CNPq, CAPES, FINEP, FNDCT, EMBRAPII.</p>
+                    <p>3. Modelos institucionais de inovação: Triângulo de Sábato e Modelo da Hélice Tripla (universidade-indústria-governo).</p>
+                    <p>3.3. Programas de desenvolvimento tecnológico para a indústria brasileira: histórico, desafios e Programa Nova Indústria Brasil.</p>
+                    <p>4. Indicadores de CT&I: Pesquisa de Inovação Tecnológica (PINTEC/IBGE) e Indicadores Nacionais de Ciência, Tecnologia e Inovação.</p>
+                    <p>5. Objetivos de Desenvolvimento Sustentável (ODS) e CT&I: contribuições da ciência e da tecnologia para a sustentabilidade, integração com a Agenda 2030 e governança, accountability e transparência na gestão pública.</p>
+                </div>
+                
+                <button class="accordion" data-topic="Eixo Temático 3">EIXO TEMÁTICO 3 – GESTÃO DE PROJETOS EM CIÊNCIA, TECNOLOGIA E INOVAÇÃO (CT&I)</button>
+                <div class="panel">
+                    <p>1. Fundamentos e práticas de gestão de projetos.</p>
+                    <p>1.1. Conceitos básicos de gestão de projetos em CT&I.</p>
+                    <p>1.2. Definição de projeto e características principais.</p>
+                    <p>1.3. Ciclo de vida de um projeto: Iniciação, Planejamento, Execução, Monitoramento e controle, e Encerramento.</p>
+                    <p>2. Noções de gestão de escopo, tempo, custo, qualidade, recursos, comunicações, riscos, aquisições e stakeholders de projetos.</p>
+                    <p>2.1. Ferramentas e métodos de gestão de projetos: Gráficos de Gantt, PERT/CPM, Matriz RACI, Kanban e SCRUM.</p>
+                    <p>3. Gestão da Inovação e do Conhecimento em projetos de CT&I.</p>
+                </div>
+
+                <button class="accordion" data-topic="Eixo Temático 4">EIXO TEMÁTICO 4 – TECNOLOGIAS DA INFORMAÇÃO E COMUNICAÇÃO (TICs) & CIÊNCIA DE DADOS</button>
+                <div class="panel">
+                    <p>1. Fundamentos e aplicações de TICs e ciência de dados.</p>
+                    <p>1.1. Fundamentos das Tecnologias da Informação e Comunicação (TICs).</p>
+                    <p>1.2. Transformação digital na administração pública e nas instituições científicas: Estratégia Federal de Governo Digital e Dados como ativo estratégico para políticas públicas.</p>
+                    <p>2. Conceitos e aplicações de ciência de dados, Big Data e Internet das Coisas (IoT).</p>
+                    <p>2.1. Inteligência artificial, aprendizado de máquina e análise preditiva.</p>
+                    <p>2.2. Ética, vieses algorítmicos e impactos sociais da IA.</p>
+                    <p>3. Governança de dados, interoperabilidade de sistemas e Lei Geral de Proteção de Dados (LGPD).</p>
+                    <p>4. Visualização e interpretação de dados em contextos de pesquisa e gestão pública.</p>
+                    <p>5. Uso de dados para formulação, monitoramento e avaliação de políticas públicas.</p>
+                    <p>6. Dados abertos e transparência na gestão pública.</p>
+                </div>
+
+                <button class="accordion" data-topic="Eixo Temático 5">EIXO TEMÁTICO 5 – METODOLOGIA DA PESQUISA CIENTÍFICA</button>
+                <div class="panel">
+                    <p>1. Fundamentos e práticas de pesquisa científica.</p>
+                    <p>1.1. Finalidades da pesquisa científica: Pesquisa básica, Aplicada, Exploratória, Descritiva e Explicativa.</p>
+                    <p>2. Classificação quanto à abordagem: Qualitativa, Quantitativa e Mista.</p>
+                    <p>2.4. Métodos científicos: Indutivo, Dedutivo e Hipotético-dedutivo.</p>
+                    <p>2.8. Tipos de pesquisa: Estudos de caso, Pesquisa-ação, Levantamento, Pesquisa experimental e quase-experimental, Revisão de literatura, Revisão bibliográfica e Revisão sistemática e integrativa.</p>
+                    <p>3. Elementos do projeto de pesquisa: Tema, Problema, Justificativa, Objetivos, Hipóteses, Metodologia e Instrumentos de coleta de dados (Entrevistas, Questionário, Observação, Formulários, Análise documental).</p>
+                    <p>4. Procedimentos de coleta de dados em pesquisa qualitativa e quantitativa.</p>
+                    <p>4.1. Redação científica.</p>
+                    <p>4.2. Estrutura de artigos e relatórios técnicos.</p>
+                    <p>4.3. Normas da ABNT, APA, Vancouver e outras.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="return-home">
+            <a href="index.html">Voltar para a Página Principal</a>
+        </section>
+
+        <section class="about-section">
+            <h2 class="about-title">Sobre este Site</h2>
+            <p>Este site foi criado para organizar e facilitar o estudo do conteúdo programático para provas concursais voltadas para áreas de Ciência, Tecnologia, Inovação (CT&I), Política Pública e Administração Pública no Brasil.</p>
+            <p>É ideal para quem concorre a cargos federais, estaduais ou municipais em áreas de governo, ciência, tecnologia e inovação.</p>
+            <p>Deseja contribuir? Envie sugestões por e-mail: contato@site-cti.org</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Conteúdo Programático CT&I. Todos os direitos reservados.</p>
+        <p>Desenvolvido com ❤️ para estudantes e profissionais da área pública.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
